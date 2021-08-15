@@ -1,0 +1,12 @@
+Package: testpackage
+Version: 1.0
+Architecture: amd64
+Maintainer: Internal Pointers <erik.lonroth@gmail.com>
+Filename: ./testpackage_1.0-1_amd64.deb
+Size: 864
+MD5sum: 28dd4b3bbc02db3361341501bc38e4b7
+SHA1: 7c490e50294c28f8738c01a174f7c45d9701c2f0
+SHA256: c884e8d7db2d17a33f2b79d9c1f25a5464b57f5827b57e78d69d61bf749ed30a
+Description: A test.
+ A test.
+

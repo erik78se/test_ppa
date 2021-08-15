@@ -3,7 +3,7 @@ https://assafmo.github.io/2019/05/02/ppa-repo-hosted-on-github.html
 
 ## Add this repo:
 
-    curl -s --compressed "https://erik78se.github.io/my_ppa/KEY.gpg" | sudo apt-key add -
+    curl -s --compressed "https://erik78se.github.io/test_ppa/KEY.gpg" | sudo apt-key add -
     sudo curl -s --compressed -o /etc/apt/sources.list.d/my_list_file.list "https://erik78se.github.io/test_ppa/my_list_file.list"
     sudo apt update
 

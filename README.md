@@ -1,5 +1,10 @@
-# Packaging
-https://assafmo.github.io/2019/05/02/ppa-repo-hosted-on-github.html
+# Deb repo for some test of Kilt packages
+This repo contains packages for
+* kilt-parachain
+* mashnet-node
+
+Below are information on how to add this repo as deb repo and how to install the packages.
+
 
 ## Add this repo:
 
@@ -7,7 +12,33 @@ https://assafmo.github.io/2019/05/02/ppa-repo-hosted-on-github.html
     sudo curl -s --compressed -o /etc/apt/sources.list.d/my_list_file.list "https://erik78se.github.io/test_ppa/my_list_file.list"
     sudo apt update
 
-## Add package here
+## Installing
+You can install both or one of them.
+
+    apt install kilt-parachain mashnet-node
+
+### Configuring
+Daemons startup configurations for the servces are located in:
+
+   /etc/default/kilt-parachain
+   
+   /etc/default/mashnet-node
+
+The services will run as a system user "kilt" with no login capability.
+
+The files and user kilt home is located in: 
+
+    /var/lib/kilt/
+
+### Starting/stoping
+Both daemons are started with systemd
+
+    systemctl start kilt-parachain
+    
+    systemctl start mashnet-node    
+
+
+## Add packages to this repo
 
     dpkg-scanpackages --multiversion . > Packages
     gzip -k -f Packages
@@ -22,4 +53,5 @@ https://assafmo.github.io/2019/05/02/ppa-repo-hosted-on-github.html
     git commit -m update
     git push
 
-
+# Packaging into github Pages
+https://assafmo.github.io/2019/05/02/ppa-repo-hosted-on-github.html

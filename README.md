@@ -3,10 +3,15 @@ This repo contains packages for
 * kilt-parachain
 * mashnet-node
 
-Below are information on how to add this repo as deb repo and how to install the packages.
+Below is information how to install the kilt packages and run the services. (Also some aux information about how this repo works as a deb repo). 
 
 
-## Add this repo:
+## Supported OS:es
+Currently, the built packages are supported on:
+
+* Ubuntu focal
+
+## Add this repo to your hosts:
 
     curl -s --compressed "https://erik78se.github.io/test_ppa/KEY.gpg" | sudo apt-key add -
     sudo curl -s --compressed -o /etc/apt/sources.list.d/my_list_file.list "https://erik78se.github.io/test_ppa/my_list_file.list"

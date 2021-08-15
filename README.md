@@ -1,10 +1,11 @@
-# Deb repo for some test of Kilt packages
+# Ubuntu/debial repo for Kilt packages (develop)
 This repo contains packages for
 * kilt-parachain
 * mashnet-node
 
 Below is information how to install the kilt packages and run the services. (Also some aux information about how this repo works as a deb repo). 
 
+Note. This repo will go away soon as the packages will move to a more permanent location. Use this primarily for test.
 
 ## Supported OS:es
 Currently, the built packages are supported on:

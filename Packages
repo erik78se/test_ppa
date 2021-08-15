@@ -1,3 +1,35 @@
+Package: kilt-parachain
+Version: 0.2.0
+Architecture: amd64
+Maintainer: Erik Lönroth <erik.lonroth@gmail.com>
+Installed-Size: 112825
+Depends: libc6 (>= 2.31), libstdc++6 (>= 10.3.0)
+Filename: ./kilt-parachain_0.2.0_amd64.deb
+Size: 26461308
+MD5sum: 7363bc3a72c0f8d7f30f51bfb17f2b4e
+SHA1: b72098118b33c17b19e18b154b10122d6d474534
+SHA256: 2bbae368d9f92221472ca318c4e3018ccd0c8a6923013ea83b30bfb47aa82786
+Section: utility
+Priority: optional
+Description: KILT parachain
+ Kilt parachain-node (parachain). Part of the Polkadot ecosystem.
+
+Package: mashnet-node
+Version: 0.24.0
+Architecture: amd64
+Maintainer: Erik Lönroth <erik.lonroth@gmail.com>
+Installed-Size: 46535
+Depends: libstdc++6 (>= 10.3.0), libc6 (>= 2.31)
+Filename: ./mashnet-node_0.24.0_amd64.deb
+Size: 12774704
+MD5sum: a7b79b3a86b982b1d0b4d0d656162930
+SHA1: c647be1679bbe0fca6e9a0c90d7cf398c123a49d
+SHA256: cf1dd3279f388f9da0b306b2ce0f1b3d0c77263a193e616a3b6cc12f4b0dbbb5
+Section: utility
+Priority: optional
+Description: [generated from Rust crate mashnet-node]
+ Kilt mashnet-node (standalone) node. Part of the Polkadot ecosystem.
+
 Package: testpackage
 Version: 1.0
 Architecture: amd64

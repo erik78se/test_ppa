@@ -36,12 +36,19 @@ The files and user kilt home is located in:
 
     /var/lib/kilt/
 
-### Starting/stoping
+### Starting/stopping
 Both daemons are started with systemd
 
     systemctl start kilt-parachain
     
     systemctl start mashnet-node    
+
+
+Check logs with:
+
+    journalctl -xe -f -u kilt-parachain.service
+
+    journalctl -xe -f -u mashnet-node.service
 
 
 ## Add packages to this repo
